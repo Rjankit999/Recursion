@@ -1,14 +1,19 @@
-#include<stdio.h>
-int main(){
-    printf("Enter a Nauber: ");
-    int n,fact=1;
-    scanf("%d",&n);
-    for (int i = 2; i <=n; i++)
+#include <stdio.h>
+int factorial(int x)
+{
+    int fact = 1;
+    for (int i = 2; i <= x; i++)
     {
-        fact=fact*i;
+        fact = fact * i;
     }
-    printf("%d",fact);
+    return fact;
+}
+int main()
+{
+    printf("Enter a Nauber: ");
+    int n;
+    scanf("%d", &n);
     
-    
-    return 0;
+    printf("%d",factorial(n));
+     return 0;
 }

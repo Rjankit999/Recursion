@@ -13,7 +13,12 @@ int main()
     printf("Enter a Nauber: ");
     int n;
     scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        printf("%d\n",factorial(i));
+    }
     
-    printf("%d",factorial(n));
+    
+    
      return 0;
 }
